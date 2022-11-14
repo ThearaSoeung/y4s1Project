@@ -1,0 +1,159 @@
+<!-- Main Container -->
+<main class="bg-[#16213E] px-24 py-10 " >
+
+    <!-- Global Container -->
+    <div>
+        <!-- Selecting -->
+        <section class="bg-white py-4 rounded-xl px-4">
+            <div class="flex justify-center ">
+                <mat-tab-group>
+                    <mat-tab class="pr-14 font-semibold text-sm " label="Kok Tarang"></mat-tab>
+                    <mat-tab label="Opponents" class="pl-14 font-semibold text-sm"></mat-tab>
+                </mat-tab-group>
+            </div>
+
+
+            <div>    
+                <!-- Sport & Time -->
+                <div class="">
+                    <div class="flex mt-4 space-x-5 justify-center">
+                        
+                        <select class="form-select w-2/5" aria-label="Default select example">
+                            <option selected>Open this select menu</option>
+                            <option value="1">Football</option>
+                            <option value="2">Volleyball</option>
+                            <option value="3">Basketball</option>
+                            <option value="4">Badminton</option>
+                            <option value="5">Tennis</option>
+                          </select>
+
+                        <mat-form-field class="1/5" >
+                            <mat-label>Choose a date</mat-label>
+                            <input matInput [matDatepicker]="picker" placeholder="Choose a date">
+                            <mat-hint>MM/DD/YYYY</mat-hint>
+                            <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                            <mat-datepicker #picker></mat-datepicker>
+                        </mat-form-field>
+                        <!-- <input type="search" id="default-search" class="rounded-lg border-black border w-1/2 text-sm py-1 pl-5 " placeholder="Date & Time" required>
+                        <svg aria-hidden="true" class="w-5 text-gray-500 dark:text-gray-400 " fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg> -->
+                    </div>           
+                </div>
+            </div>
+        </section>
+
+        <!-- Main Container -->
+        <section>
+            <div class="bg-white mt-8 rounded-xl p-4">
+                <section>
+                    <div class="">
+
+                        <div class="font-semibold ">Offers</div>
+                        <div class="font-thin text-sm ">Promotions, deals and special offers for you</div>
+
+                        <!-- Carousel -->
+                        <div class="px-14 pt-3 hidden md:flex  ">
+                            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-indicators">
+                                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                </div>
+                                <div class="carousel-inner">
+                                  <div class="carousel-item active">
+                                    <img src="../../assets/s1.png" class="" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="..." class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="..." class="d-block w-100" alt="...">
+                                  </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Next</span>
+                                </button>
+                              </div>
+                        </div>
+
+                        <div class="mt-10 flex justify-center">
+                            <mat-tab-group>
+                                <mat-tab label="Football"> Content 1 </mat-tab>
+                                <mat-tab label="Volleyball"> Content 2 </mat-tab>
+                                <mat-tab label="Basketball"> Content 3 </mat-tab>
+                                <mat-tab label="Badminton"> Content 3 </mat-tab>
+                                <mat-tab label="Tennis"> Content 3 </mat-tab>
+                              </mat-tab-group>
+                          </div>
+                    </div>      
+
+                </section>
+
+                        <!-- Data -->
+                        <section class=" hidden mt-7">
+                            <div class="border w-full rounded-xl border-black flex">
+
+                                <!-- Left -->
+                                <div class="w-[35%]">
+                                    <img src="../../assets/s1.png" alt="" class="rounded-l-xl">
+                                </div>
+
+                                <!-- Middle -->
+                                <div class="text-xs w-[30%] py-3 px-3">
+                                    <div class="text-lg font-bold mb-2 ">Premium Sports Club</div>
+                                    <div class="">
+                                        <div>Phnom Penh Tmey, Khan Sen Sok</div>
+                                        <div>Map: https://goo.gl/maps/WYQn5</div>
+                                        <div>Tel: 066 858 687 </div>
+                                    </div>
+
+                                    <div>
+                                        <button class="border border-[#E94560] px-6 py-1 mt-2 rounded-lg">Check Date & Time</button>
+                                    </div>
+                                </div>
+
+                                <!-- Right -->
+                                <div class="text-xs w-[30%] py-8 px-4 border-black border-l ">
+                                    <div>18$ / 1hour</div>
+                                    <div class="flex">
+                                        <div>
+                                            Coupon Code: 
+                                        </div>
+                                        <div class="bg-[#E94560] text-white ">
+                                            4K2019
+                                        </div>
+
+                                    </div>
+                                    <div>2 hours + Discounts</div>
+                                    <div class="text-[#248634]">
+                                        Free Cancelation within 1 hour 
+                                    </div>
+                                    <div class="border bg-[#E94560] text-white rounded-2xl text-center ">Book Now</div>
+
+                                </div>
+
+                            </div>
+                        </section>
+
+            </div>
+
+        </section>
+
+
+
+    </div>
+
+
+
+    
+
+
+
+   
+
+</main>
+
